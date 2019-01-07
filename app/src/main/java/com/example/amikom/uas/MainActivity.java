@@ -238,10 +238,11 @@ public class MainActivity extends AppCompatActivity
         /*} else if (id == R.id.favorite) {
             Intent fav = new Intent(MainActivity.this, FavoriteActivity.class);
             startActivity(fav);*/
-        } else if (id == R.id.about) {
-            Intent about = new Intent(MainActivity.this, About.class);
-            startActivity(about);
         }
+//        else if (id == R.id.about) {
+//            Intent about = new Intent(MainActivity.this, About.class);
+//            startActivity(about);
+//        }
          else if (id == R.id.bahasa) {
             Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
             startActivity(intent);

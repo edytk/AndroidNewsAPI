@@ -3,7 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+<!-- tambahan icon dan tulisan-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher_news_2" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="146dp"
+        android:text="Android News App"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        android:textSize="20sp" />
+
+    <!---->
     <group android:checkableBehavior="single">
+
+
+
         <item
             android:id="@+id/entertainment"
             android:title="@string/entertainment"
@@ -24,10 +50,10 @@
 
     <item android:title="@string/judulmenu">
         <menu>
-            <item
-                android:id="@+id/about"
-                android:icon="@drawable/ic_about"
-                android:title="@string/about" />
+            <!--<item-->
+                <!--android:id="@+id/about"-->
+                <!--android:icon="@drawable/ic_about"-->
+                <!--android:title="@string/about" />-->
             <item
                 android:id="@+id/bahasa"
                 android:icon="@drawable/ic_menu_gallery"
