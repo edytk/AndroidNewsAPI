@@ -16,7 +16,7 @@
     <string name="language">Language</string>
     <string name="about">About</string>
     <string name="alarm">Reminder</string>
-    <string name="logout">Logout</string>
+    <string name="logout">Exit</string>
     <string name="judulmenu">Setting</string>
 
     <string name="one_time_alarm">One Time Reminder</string>
