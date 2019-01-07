@@ -4,20 +4,15 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.NotificationCompat;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.ShareActionProvider;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -27,7 +22,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.amikom.uas.DB.DataHelper;
 
-import java.io.File;
+import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -38,12 +33,12 @@ public class DetailActivity extends AppCompatActivity {
     private ImageButton notification;
     DataHelper dbHelper;
 
-    private ShareActionProvider shareActionProvider;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        floatingButton();
 
         img = getIntent().getStringExtra("imgNews");
         judul = getIntent().getStringExtra("titleNews");
@@ -141,39 +136,18 @@ public class DetailActivity extends AppCompatActivity {
 
     }*/
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //Menginisialisasi MenuBar yang akan ditampilkan pada ActionBar/Toolbar
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu_bar, menu);
+    private void floatingButton() {
+        FloatingActionButton fab = findViewById(R.id.fab);
 
-        //MenuItem yang akan dijadikan ShareActionProvider
-        MenuItem item = menu.findItem(R.id.share);
-
-        //Ambil dan Simpan ShareActionProvider
-        shareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(item);
-        setShare();
-        return true;
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "Cek berita ini yuk! \n" + Uri.parse(sumber));
+                startActivity(Intent.createChooser(shareIntent, "Share with"));
+            }
+        });
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.share:
-                setShare();
-                break;
-        }
-        return true;
-    }
-
-    private void setShare(){
-        ApplicationInfo appInfo = getApplicationContext().getApplicationInfo();
-        String apkPath = appInfo.sourceDir;
-        Intent Share = new Intent();
-        Share.setAction(Intent.ACTION_SEND);
-        Share.setType("application/vnd.android.package-archive");
-        Share.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(apkPath)));
-        shareActionProvider.setShareIntent(Share);
-    }
-
 }

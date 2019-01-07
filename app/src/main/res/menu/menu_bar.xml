@@ -3,10 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/share"
+        android:id="@+id/fab"
         app:showAsAction="ifRoom"
         android:title="Share"
         android:icon="@drawable/ic_menu_share"
         app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:backgroundTint="@color/colorAccent"-->
+        <!--app:elevation="6dp"-->
+        <!--app:layout_anchorGravity="bottom|end"-->
+        <!--app:pressedTranslationZ="12dp"-->
+        <!--app:srcCompat="@drawable/favorite" />-->
 
 </menu>
