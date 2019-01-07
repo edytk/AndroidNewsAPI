@@ -1,0 +1,34 @@
+
+<resources>
+    <string name="app_name">FP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="business">Bisnis</string>
+    <string name="entertainment">Entertainmen</string>
+    <string name="healt">Kesehatan</string>
+    <string name="Science">Sains</string>
+    <string name="technology">Teknologi</string>
+    <string name="favorite">Favorite</string>
+    <string name="sport">Olahraga</string>
+    <string name="language">Bahasa</string>
+    <string name="about">Tentang</string>
+    <string name="alarm">Pengingat</string>
+    <string name="logout">Keluar</string>
+    <string name="judulmenu">Pengaturan</string>
+
+
+    <string name="one_time_alarm">Pengingat Sewaktu</string>
+    <string name="tanggal_alarm">Tanggal Pengingat</string>
+    <string name="set_one_time_alarm">Set Pengingat Sewaktu</string>
+    <string name="pesan_alarm">Pesan Pengingat</string>
+    <string name="repeating_alarm">Ulangi Pengingat</string>
+    <string name="set_repeating_alarm">Set Ulangi Pengingat</string>
+    <string name="batalkan_alarm">Batalkan Pengingat</string>
+    <string name="waktu_alarm">Waktu Pengingat</string>
+
+
+</resources>

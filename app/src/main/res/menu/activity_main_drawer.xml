@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/entertainment"
+            android:title="@string/entertainment"
+            android:icon="@drawable/ic_entertainment"/>
+        <item
+            android:id="@+id/sports"
+            android:title="@string/sport"
+            android:icon="@drawable/ic_sports"/>
+        <item
+            android:id="@+id/technology"
+            android:title="@string/technology"
+            android:icon="@drawable/ic_technology"/>
+        <item
+            android:id="@+id/favorite"
+            android:title="@string/favorite"
+            android:icon="@drawable/favorite_i"/>
+    </group>
+
+    <item android:title="@string/judulmenu">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/about" />
+            <item
+                android:id="@+id/bahasa"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="@string/language" />
+            <item
+                android:id="@+id/alarm"
+                android:icon="@drawable/ic_access_alarm_black_36dp"
+                android:title="@string/alarm" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

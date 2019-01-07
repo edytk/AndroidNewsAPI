@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">NewsAPI</string>
+    <string name="app_name">FP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="business">Business</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="healt">Healt</string>
+    <string name="Science">Science</string>
+    <string name="technology">Technology</string>
+    <string name="favorite">Favaorite</string>
+    <string name="sport">Sport</string>
+    <string name="language">Language</string>
+    <string name="about">About</string>
+    <string name="alarm">Reminder</string>
+    <string name="logout">Logout</string>
+    <string name="judulmenu">Setting</string>
+
+    <string name="one_time_alarm">One Time Reminder</string>
+    <string name="tanggal_alarm">Date Reminder</string>
+    <string name="set_one_time_alarm">Set One Time Reminder</string>
+    <string name="pesan_alarm">Message Reminder</string>
+    <string name="repeating_alarm">Repeating Reminder</string>
+    <string name="set_repeating_alarm">Set Repeating Reminder</string>
+    <string name="batalkan_alarm">Cancel Reminder</string>
+    <string name="waktu_alarm">Time Reminder</string>
+
+
 </resources>
