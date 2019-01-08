@@ -28,5 +28,21 @@
     <string name="batalkan_alarm">Cancel Reminder</string>
     <string name="waktu_alarm">Time Reminder</string>
 
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="not_register">Not Registered?</string>
+    <string name="register">Register Here!</string>
+    <string name="login_here">Login here!</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="btn_register">Register</string>
+    <string name="cnf_password">Confirm Password</string>
+    <string name="btn_update">Update</string>
+    <string name="old_password">Old Password</string>
+    <string name="your_password">Your Password</string>
+    <string name="new_password">New Password</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+
 
 </resources>
